@@ -241,7 +241,7 @@ while True:
                     tasks = check(SN - 1, task_list)
                     if tasks == True:
                         with open("tasks.json", "w") as checked:
-                            json.dump(tasks, checked, indent=4)
+                            json.dump(task_list, checked, indent=4)
                         print("**CHECKED!**")
                         break
                 else:
